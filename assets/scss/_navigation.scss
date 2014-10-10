@@ -1,20 +1,24 @@
 @media screen and (min-width:320px) {
 	
 	nav {
-		width: 80%;
+		width: 90%;
+		height: 100%;
 		padding: 60px 1px 10px 0px;
 		position: absolute;
 		top: 0;
 		left: 0;
 		background: #000;
-		-moz-transition: all .3s;
-		-webkit-transition: all .3s;
-		-o-transition: all .3s;
-		transition: all .3s;
+		-moz-transition: all .4s;
+		-webkit-transition: all .4s;
+		transition: all .4s;
+		opacity: 1;
+		overflow: inherit;
 	}
 	
 	nav.hidden {
-		margin-left: -95%;
+		margin-left: -90%;
+		opacity: 0;
+		overflow: hidden;
 	}
 	
 	nav .nav-logo {
@@ -22,7 +26,7 @@
 		left: 15px;
 		top: 19px;
 		font-size:1.3em;
-		color: #666;
+		color: #888;
 	}
 	
 	nav .nav-logo::before {
@@ -37,10 +41,10 @@
 	nav .close {
 		position: absolute;
 		right: 15px;
-		top: 10px;
-		padding: 10px 12px;
+		top: 12px;
+		padding: 8px 10px;
 		border-radius: 25px;
-		background: #333;
+		background: #444;
 		line-height: 1em;
 	}
 	
@@ -52,7 +56,7 @@
 		position: absolute;
 		left: 15px;
 		top: 6px;
-		padding: 10px 11px;
+		padding: 10px 10px;
 		border-radius: 50px;
 		background: #000;
 		line-height: 1em;
@@ -70,24 +74,28 @@
 		padding: 0;
 	}
 	
-	nav ul {
+	nav ul.menu {
 		margin: 0;
 		list-style: none;
+		display: block;
+		background: #c00;
 	}
 	
-	nav ul li {
+	nav ul.menu li {
+		display: block;
+		position: relative;
+	}
+	
+	nav ul.menu li i {
 		display: inline-block;
-		width: 100%;
+		width: 21px;
+		text-align: left;
 	}
 	
-	nav ul li a {
+	nav ul.menu li a {
 		padding: 15px;
-		display: inline-block;
-		width: 100%;
+		display: block;
 		background: -webkit-linear-gradient(top, #222, #1b1b1b);
-		background: -moz-linear-gradient(top, #222, #1b1b1b);
-		background: -o-linear-gradient(top, #222, #1b1b1b);
-		background: -ms-linear-gradient(top, #222, #1b1b1b);
 		background: linear-gradient(top, #1f1f1f, #1b1b1b);
 		background-color: #111111;
 		border-top: 1px solid #2b2b2b;
@@ -96,50 +104,96 @@
 		text-shadow: #000 1px 1px 0;
 	}
 	
-	nav ul li:last-child a {
+	nav ul.menu li:last-child a {
 		border-bottom: 1px solid #222;
+	}
+	
+	nav ul.menu li a:active {
+		background: #111;
+	}
+	
+	nav ul.menu li.current a {
+		background: #141414;
 	}
 	
 	/* xxxxxxxxxx Submenu xxxxxxxxxx */
 	
-	nav ul ul li a {
-		background: #292929;
+	nav ul.menu ul li a::before {
+		content: "\f105";
+		font-family: FontAwesome;
+		font-style: normal;
+		font-weight: normal;
+		text-decoration: inherit;
+		margin-right: 5px;
+	}
+		
+	nav ul.menu li a.indicator.closed::after {
+		content: "+";
+		top: 14px;
+	}
+	
+	nav ul.menu li a.indicator::after {
+		content: "–";
+		top: 13px;
+	}
+	
+	nav ul.menu li a.indicator::after {
+		font-family: FontAwesome;
+		font-style: normal;
+		font-weight: normal;
+		text-decoration: inherit;
+		margin-left: 15px;
+		font-size: 1.8em;
+		color: #666;
+		position: absolute;
+		right: 15px;
+	}
+
+	nav ul.menu ul {
+		margin-left: 0;
+		-webkit-transition: all 0.3s;
+		-moz-transition: all 0.3s;
+		transition: all 0.3s;
+	}	
+	
+	nav ul.menu ul.hidden {
+		margin-left: -95%;
+		-webkit-transition: all 0.3s;
+		-moz-transition: all 0.3s;
+		transition: all 0.3s;
+	}
+	
+	nav ul.menu ul.hidden > li {
+		display: none;
+	}
+	
+	nav ul.menu ul li a {
+		background: #252525;
 		border-top: 1px solid #333;
 		border-bottom: 1px solid #111;
-		text-indent: 15px;
+		text-indent: 25px;
 		color: #bbb !important;
 		text-shadow: #000 1px 1px 0;
 	}
 	
-	nav ul ul {
+	nav ul.menu ul li a:active {
+		background: #151515;
 	}
-}
-
-@media screen and (min-width:480px) {
+	
+	nav ul.menu ul li.current a {
+		background: #181818 !important
+	}
 	
 }
 
 @media screen and (min-width:600px) {
 	
 	nav {
-		width: 65%;
+		width: 380px;
 	}
 	
-}
-
-@media screen and (min-width:768px) {
-
-	header .open {
-		top: 11px;
-		padding: 11px 12px;
+	nav ul.menu {
+		max-width: 379px;
 	}
-	
-}
-
-@media screen and (min-width:900px) {
-	
-}
-
-@media screen and (min-width:1024px) {
 	
 }

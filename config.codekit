@@ -176,6 +176,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/assets\/js\/navigation.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/js\/navigation.js",
+		"outputAbbreviatedPath": "\/assets\/js\/min\/navigation.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/assets\/js\/picturefill.js": {
 		"fileType": 64,
 		"ignore": 1,
@@ -387,7 +398,7 @@
 	},
 "hooks": [
 	],
-"lastSavedByUser": "Karsten",
+"lastSavedByUser": "Karsten vom Wege",
 "manualImportLinks": {
 	"\/assets\/js\/scripts.js": [
 		{
@@ -428,8 +439,14 @@
 			},
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/assets\/js\/main.js",
+			"linkedFileAbbreviatedPath": "\/assets\/js\/navigation.js",
 			"position": 6,
+			"type": 0
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/assets\/js\/main.js",
+			"position": 7,
 			"type": 0
 			}
 		]
