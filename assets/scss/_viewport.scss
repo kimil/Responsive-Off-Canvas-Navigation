@@ -1,0 +1,76 @@
+@media screen and (min-width:320px) {
+
+.viewport:before { 
+	content: "320 px";
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	background: #000;
+	padding: 5px 10px;
+	color: #fff;
+	font-size: 1em;
+	line-height: 1em;
+	opacity: 0.2;
+}
+
+body:hover > .viewport:before {
+	opacity: 1;
+}
+
+}
+
+@media screen and (min-width:480px) {
+
+.viewport:before { 
+	content: "480 px"; 
+}
+
+}
+
+@media screen and (min-width:568px) {
+
+.viewport:before { 
+	content: "568 px"; 
+}
+
+}
+
+@media screen and (min-width:600px) {
+
+.viewport:before { 
+	content: "600 px"; 
+}
+
+}
+
+@media screen and (min-width:768px) {
+
+.viewport:before { 
+	content: "768 px"; 
+}
+
+}
+
+@media screen and (min-width:900px) {
+
+.viewport:before { 
+	content: "900 px"; 
+}
+
+}
+
+@media screen and (min-width:1024px) {
+
+.viewport:before { 
+	content: "1024 px"; 
+}
+
+}
+
+@media screen and (min-width:1140px) {
+
+.viewport:before { 
+	content: "1140 px"; 
+}
+
+}

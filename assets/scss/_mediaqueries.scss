@@ -1,0 +1,34 @@
+@media screen and (min-width:320px) {
+	.inner {
+		padding: 15px;
+	}
+}
+
+@media screen and (min-width:480px) {
+	
+}
+
+@media screen and (min-width:600px) {
+	
+}
+
+@media screen and (min-width:768px) {
+	.inner {
+		padding: 20px 0;
+		width: 710px;
+		margin: 0 auto;
+	}
+}
+
+@media screen and (min-width:900px) {
+	.inner {
+		padding: 25px 0;
+		width: 850px;
+	}
+}
+
+@media screen and (min-width:1024px) {
+	.inner {
+		width: 980px;
+	}
+}
