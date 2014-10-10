@@ -5,6 +5,7 @@ $(document).ready(function(){
 	$("nav ul.menu li a.indicator").addClass("closed");
 });
 
+$('nav ul.menu').find('li:has(ul)').css("cursor","pointer");
 $('nav ul.menu').find('li:has(ul)').click(function() {
 	$(this).find("ul").toggleClass("hidden");
 	$(this).find(".indicator").toggleClass("closed");
