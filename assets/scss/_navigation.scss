@@ -117,16 +117,7 @@
 	}
 	
 	/* xxxxxxxxxx Submenu xxxxxxxxxx */
-	
-	nav ul.menu ul li a::before {
-		content: "\f105";
-		font-family: FontAwesome;
-		font-style: normal;
-		font-weight: normal;
-		text-decoration: inherit;
-		margin-right: 5px;
-	}
-		
+
 	nav ul.menu li a.indicator.closed::after {
 		content: "+";
 		top: 14px;
