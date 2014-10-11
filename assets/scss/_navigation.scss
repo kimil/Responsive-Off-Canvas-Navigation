@@ -9,6 +9,7 @@
 		left: 0;
 		background: #000;
 		-moz-transition: all .4s;
+		-o-transition: all .4s;
 		-webkit-transition: all .4s;
 		transition: all .4s;
 		opacity: 1;
@@ -29,14 +30,14 @@
 		color: #888;
 	}
 	
-	/*nav .nav-logo::before {
+	nav .nav-logo::before {
 		content: "\f0c9";
 		font-family: FontAwesome;
 		font-style: normal;
 		font-weight: normal;
 		text-decoration: inherit;
 		margin-right: 10px;
-	}*/
+	}
 	
 	nav .close {
 		position: absolute;
@@ -155,6 +156,7 @@
 		margin-left: 0;
 		-webkit-transition: all 0.3s;
 		-moz-transition: all 0.3s;
+		-o-transition: all 0.3s;
 		transition: all 0.3s;
 	}	
 	
@@ -162,6 +164,7 @@
 		margin-left: -95%;
 		-webkit-transition: all 0.3s;
 		-moz-transition: all 0.3s;
+		-o-transition: all 0.3s;
 		transition: all 0.3s;
 	}
 	
