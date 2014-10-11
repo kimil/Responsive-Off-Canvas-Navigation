@@ -156,7 +156,13 @@ section {
 	text-align: center;
 }
 
-footer {
+a.github {
+	color: #666;
+	text-shadow: none;
+}
+
+a.github:hover {
+	color: #444;
 }
 
 .hand {

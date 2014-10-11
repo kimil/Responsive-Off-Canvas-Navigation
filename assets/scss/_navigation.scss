@@ -46,10 +46,15 @@
 		border-radius: 25px;
 		background: #444;
 		line-height: 1em;
+		cursor: pointer;
 	}
 	
 	nav .close a {
 		color: #000;
+	}
+	
+	nav .close:hover {
+		background: #666;
 	}
 	
 	header .open {
