@@ -168,6 +168,11 @@ a.github:hover {
 	color: #444;
 }
 
+p.left.hidden,
+p.right.hidden {
+	display: none;
+}
+
 .hand {
 	vertical-align: text-top;
 	margin: 0;

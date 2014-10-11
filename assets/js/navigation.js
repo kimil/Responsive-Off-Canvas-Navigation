@@ -5,6 +5,8 @@ $(function() {
 					$(document).swipe( {
 						swipeLeft:function(event, direction, distance, duration, fingerCount) {
 							$("nav").addClass("hidden");	
+							$("p.right").removeClass("hidden");
+							$("p.left").addClass("hidden");
 						},
 						threshold:100
 					});
@@ -14,7 +16,9 @@ $(function() {
 					var count=0;
 					$("body").swipe( {
 						swipeRight:function(event, direction, distance, duration, fingerCount) {
-							$("nav").removeClass("hidden");	
+							$("nav").removeClass("hidden");
+							$("p.left").removeClass("hidden");
+							$("p.right").addClass("hidden");
 						},
 						threshold:100
 					});
@@ -23,6 +27,7 @@ $(function() {
 $('nav ul.menu').find('li:has(ul)').children('a').removeAttr('href').addClass("indicator");
 $(document).ready(function(){
 	$("nav ul.menu ul").addClass("hidden");
+	$("p.left").addClass("hidden");
 	$("nav ul.menu li a.indicator").addClass("closed");
 });
 $('nav ul.menu').find('li:has(ul)').css("cursor","pointer");
@@ -32,7 +37,10 @@ $('nav ul.menu').find('li:has(ul)').click(function() {
 });
 $(".open").click(function(){
 	$("nav").toggleClass("hidden");
+	$("p.left").removeClass("hidden");
+	$("p.right").addClass("hidden");
 });
 $(".close").click(function(){
 	$("nav").toggleClass("hidden");
+	$("p.left,p.right").toggleClass("hidden");
 });
