@@ -1,7 +1,7 @@
 @media screen and (min-width:320px) {
 	
 	nav {
-		width: 90%;
+		width: 85%;
 		height: 100%;
 		padding: 60px 1px 10px 0px;
 		position: absolute;
@@ -16,7 +16,7 @@
 	}
 	
 	nav.hidden {
-		margin-left: -90%;
+		margin-left: -85%;
 		opacity: 0;
 		overflow: hidden;
 	}
@@ -29,14 +29,14 @@
 		color: #888;
 	}
 	
-	nav .nav-logo::before {
+	/*nav .nav-logo::before {
 		content: "\f0c9";
 		font-family: FontAwesome;
 		font-style: normal;
 		font-weight: normal;
 		text-decoration: inherit;
 		margin-right: 10px;
-	}
+	}*/
 	
 	nav .close {
 		position: absolute;
@@ -54,12 +54,18 @@
 	
 	header .open {
 		position: absolute;
-		left: 15px;
-		top: 6px;
-		padding: 10px 12px;
-		border-radius: 50px;
-		background: #000;
+		left: 0px;
+		top: 0px;
+		padding: 18px;
+		background: #222;
 		line-height: 1em;
+		font-size: 1.8em;
+		border-right: 1px solid #000;
+		cursor: pointer;
+	}
+	
+	header .open:hover {
+		background: #333;
 	}
 	
 	header .open a {

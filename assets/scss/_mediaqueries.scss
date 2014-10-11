@@ -1,22 +1,39 @@
 @media screen and (min-width:320px) {
 	.inner {
-		padding: 15px;
+		padding: 25px;
+	}
+	
+	header {
+		height: 70px;
+	}
+	
+	.hand {
+		width: 132px;
+		height: auto;
 	}
 }
 
 @media screen and (min-width:480px) {
-	
+	.hand {
+		width: 150px;
+	}
 }
 
 @media screen and (min-width:600px) {
-	
+	.hand {
+		width: 200px;
+	}
 }
 
 @media screen and (min-width:768px) {
 	.inner {
-		padding: 20px 0;
+		padding: 25px 0;
 		width: 710px;
 		margin: 0 auto;
+	}
+	
+	.hand {
+		width: auto;
 	}
 }
 

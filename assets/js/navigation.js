@@ -4,7 +4,7 @@ $(function() {
 					var count=0;
 					$(document).swipe( {
 						swipeLeft:function(event, direction, distance, duration, fingerCount) {
-							$("nav").toggleClass("hidden");	
+							$("nav").addClass("hidden");	
 						},
 						threshold:0
 					});
@@ -14,7 +14,7 @@ $(function() {
 					var count=0;
 					$("body").swipe( {
 						swipeRight:function(event, direction, distance, duration, fingerCount) {
-							$("nav").toggleClass("hidden");	
+							$("nav").removeClass("hidden");	
 						},
 						threshold:0
 					});
