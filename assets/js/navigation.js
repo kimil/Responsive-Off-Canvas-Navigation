@@ -6,7 +6,7 @@ $(function() {
 						swipeLeft:function(event, direction, distance, duration, fingerCount) {
 							$("nav").addClass("hidden");	
 						},
-						threshold:0
+						threshold:100
 					});
 				});
 				
@@ -16,7 +16,7 @@ $(function() {
 						swipeRight:function(event, direction, distance, duration, fingerCount) {
 							$("nav").removeClass("hidden");	
 						},
-						threshold:0
+						threshold:100
 					});
 				});
 
