@@ -107,6 +107,10 @@ a:link,
 a:visited {
 	text-decoration: none;
 	color: #666;
+	-moz-transition: all .3s;
+	-o-transition: all .3s;
+	-webkit-transition: all .3s;
+	transition: all .3s;
 }
 
 a:hover {
@@ -167,7 +171,30 @@ iframe:last-child {
 }
 
 header {
+	background: #333;
+}
+
+header .download {
+	position: absolute;
+	right: 15px;
+	top: 13px;
+	vertical-align: middle;
+}
+
+header .download a {
+	padding: 10px 15px;
+	display: inline-block;
+	font-size: 0.9em;
+	border: 1px solid #222;
+	color: #ccc;
+	border-radius: 3px;
 	background: #222;
+}
+
+header .download a:hover {
+	border-color: #000;
+	background: #000;
+	color: #fff;
 }
 
 nav {
