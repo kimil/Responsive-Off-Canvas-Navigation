@@ -44,6 +44,3 @@ $(".close").click(function(){
 	$("nav").toggleClass("hidden");
 	$("p.left,p.right").toggleClass("hidden");
 });
-$('input').on('click focusin', function() {
-    this.value = '';
-});
