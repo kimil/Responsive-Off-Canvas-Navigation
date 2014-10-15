@@ -49,5 +49,16 @@ if (document.documentElement.clientWidth < 768) {
 $(window).resize(function(){location.reload();});
 
 if (document.documentElement.clientWidth > 767) {
-	$("nav ul.menu ul").addClass("animated fadeIn");
+	$(document).ready(function () {
+		var $nav = $('nav .inner > ul > li');
+		$nav.hover(
+			function() {
+	            $(this).children('a').addClass('hovered')
+			},
+			function() {
+	            $(this).children('a').removeClass('hovered')
+			}
+		);
+		$('nav ul.menu').find('li:has(ul)').children('a').addClass("indicator");
+	});
 }

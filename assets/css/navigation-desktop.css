@@ -44,6 +44,10 @@
 		border-right: 1px solid #292929;
 		border-left: 1px solid #000;
 		text-shadow: #000 1px 1px 0;
+		-moz-transition: background .3s;
+		-o-transition: background .3s;
+		-webkit-transition: background-color .3s;
+		transition: background-color .3s;
 	}
 	
 	nav ul.menu li:last-child a {
@@ -60,6 +64,22 @@
 	
 	nav ul.menu li a i {
 		display: none;
+	}
+	
+	nav ul.menu li a.indicator {
+		background: url(../img/indicator.svg) right bottom no-repeat;
+		background-size: 15px auto;
+	}
+	
+	nav ul.menu li a.indicator:hover {
+		background-image: none;
+	}
+	
+	nav ul.menu li a.hovered {
+		background: #111;
+		background-image: none;
+		border-right-color: #000;
+		border-left-color: #000;
 	}
 	
 	/*Submenu*/
@@ -103,6 +123,11 @@
 	nav ul.menu ul li:last-child a {
 		border-right: none;
 		border-bottom: none;
+	}
+	
+	nav ul.menu ul li.current a,
+	nav ul.menu ul li.current a:hover {
+		background: #111;
 	}
 }
 
