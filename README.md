@@ -9,10 +9,7 @@ Example HTML
 		<link rel="stylesheet" media="screen and (max-width: 767px)" href="css/navigation-mobile.css" />
 		<link rel="stylesheet" media="screen and (min-width: 768px)" href="css/navigation-desktop.css" />
 	
-	
-		<header>
-			<span class="open"><a><i class="fa fa-bars"></i></a></span>
-		</header>
+		<span class="open"><a><i class="fa fa-bars"></i></a></span>
 		
 		<nav class="hidden">
 			<span class="nav-logo">Navigation</span>
@@ -41,5 +38,3 @@ Example HTML
 		
 		<script src="js/jquery.js" type="text/javascript"></script>
 		<script src="js/navigation.js" type="text/javascript"></script>
-	</body>
-</html>
