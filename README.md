@@ -5,15 +5,10 @@ Demo: http://quantumx.de/responsive-menu/
 
 
 Example HTML
-	<head>
-		<meta charset="utf-8">
-		
-		<link rel="stylesheet" media="screen" href="css/style.css" />
+
 		<link rel="stylesheet" media="screen and (max-width: 767px)" href="css/navigation-mobile.css" />
 		<link rel="stylesheet" media="screen and (min-width: 768px)" href="css/navigation-desktop.css" />
-	</head>
 	
-	<body>
 	
 		<header>
 			<span class="open"><a><i class="fa fa-bars"></i></a></span>
