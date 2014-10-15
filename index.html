@@ -8,10 +8,12 @@
         <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
 
         <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" media="screen and (max-width: 767px)" href="assets/css/navigation-mobile.css" />
+        <link rel="stylesheet" media="screen and (min-width: 768px)" href="assets/css/navigation-desktop.css" />
         
     </head>
     <body>    
-
+	<span class="viewport"></span>
         <header>
         	<span class="open"><a><i class="fa fa-bars"></i></a></span>
         	<span class="download"><a title="Download from GitHub" href="https://github.com/epicrhapsody/Responsive-Off-Canvas-Navigation/archive/master.zip"><i class="fa fa-download"></i> download</a></span>
@@ -24,8 +26,8 @@
 	        	<div class="search">
 	        		<input type="search" name="search" value="search ..." />
 	        	</div>	
-        		<ul class="menu">
-        			<li><a href=""><i class="fa fa-home"></i> Home</a></li>
+        		<ul class="menu clearfix">
+        			<li class="current"><a href=""><i class="fa fa-home"></i> Home</a></li>
         			<li><a href=""><i class="fa fa-bullhorn"></i> News</a></li>
         			<li><a href=""><i class="fa fa-group"></i> Band</a>
         				<ul>
@@ -61,18 +63,6 @@
         <section>
         	<div class="inner clearfix">
         		<h2>Responsive Off Canvas Navigation</h2>
-        		<p class="left">
-							<img class="hand left" src="assets/img/Swipe_Left.png"><br />
-							Swipe to the left to hide the menu
-						</p>
-						<p class="right">
-        			<img class="hand right" src="assets/img/Swipe_Right.png">
-        			<br />
-        			Swipe to the right to show the menu
-        		</p>
-        		<p>
-        			<img class="qr-code" src="assets/img/qr.png" width="130" height="130">
-        		</p>
         	</div>
         </section>
         

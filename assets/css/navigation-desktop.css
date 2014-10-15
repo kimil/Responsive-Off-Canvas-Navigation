@@ -1,0 +1,119 @@
+@media screen and (min-width:768px) {
+
+	nav .close,
+	nav .nav-logo,
+	.open,
+	.search {
+		display: none;
+	}
+	
+	nav,
+	nav.hidden {
+		margin: 0;
+	}
+	
+	nav {
+		background-image: -o-linear-gradient(bottom, #1F1F1F 0%, #1B1B1B 100%);
+		background-image: -moz-linear-gradient(bottom, #1F1F1F 0%, #1B1B1B 100%);
+		background-image: -webkit-linear-gradient(bottom, #1F1F1F 0%, #1B1B1B 100%);
+		background-image: -ms-linear-gradient(bottom, #1F1F1F 0%, #1B1B1B 100%);
+		background-image: linear-gradient(to bottom, #1F1F1F 0%, #1B1B1B 100%);
+		border-top: 1px solid #000;
+		border-bottom: 1px solid #000;
+		display: block;
+	}
+	
+	nav .inner {
+		padding: 0;
+	}
+	
+	nav ul.menu {
+		margin: 0;
+	}
+	
+	nav ul.menu li {
+		float: left;
+		display: inline-block;
+		position: relative;
+	}
+	
+	nav ul.menu li a {
+		display: inline-block;
+		padding: 11px;
+		color: #ccc;
+		border-right: 1px solid #292929;
+		border-left: 1px solid #000;
+		text-shadow: #000 1px 1px 0;
+	}
+	
+	nav ul.menu li:last-child a {
+		border-right: 1px solid #000;
+	}
+	
+	nav ul.menu li a:hover,
+	nav ul.menu li.current a,
+	nav ul.menu li.current a:hover {
+		background: #111;
+		border-right-color: #000;
+		border-left-color: #000;
+	}
+	
+	nav ul.menu li a i {
+		display: none;
+	}
+	
+	/*Submenu*/
+	
+	nav ul.menu li:hover > ul {
+		display: inline-block;
+	}
+	
+	nav ul.menu ul {
+		display: none;
+		position: absolute;
+		background-image: -o-linear-gradient(bottom, #1F1F1F 0%, #1B1B1B 100%);
+		background-image: -moz-linear-gradient(bottom, #1F1F1F 0%, #1B1B1B 100%);
+		background-image: -webkit-linear-gradient(bottom, #1F1F1F 0%, #1B1B1B 100%);
+		background-image: -ms-linear-gradient(bottom, #1F1F1F 0%, #1B1B1B 100%);
+		background-image: linear-gradient(to bottom, #1F1F1F 0%, #1B1B1B 100%);
+		border: 1px solid #000;
+		width: 250px;
+		left: 0;
+		margin: 0;
+		-webkit-animation-duration: 0.2s;
+		-moz-animation-duration: 0.2s;
+		animation-duration: 0.2s;
+	}
+	
+	nav ul.menu ul li {
+		display: inline-block;
+		width: 100%;
+	}
+	
+	nav ul.menu ul li a {
+		display: block;
+		border: none;
+		border-bottom: 1px solid #000;
+	}
+	
+	nav ul.menu ul li:first-child a {
+		border-left: none;
+	}
+	
+	nav ul.menu ul li:last-child a {
+		border-right: none;
+		border-bottom: none;
+	}
+}
+
+@media screen and (min-width:900px) {
+	nav ul.menu li a {
+		padding: 15px;
+	}
+}
+
+@media screen and (min-width:1024px) {
+	nav ul.menu li a {
+		padding: 20px;
+	}
+}
