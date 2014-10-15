@@ -5,10 +5,8 @@ Demo: http://quantumx.de/responsive-menu/
 
 
 Example HTML
-<!DOCTYPE html>	
 	<head>
 		<meta charset="utf-8">
-		<title>Responsive Off Canvas Navigation</title>
 		
 		<link rel="stylesheet" media="screen" href="css/style.css" />
 		<link rel="stylesheet" media="screen and (max-width: 767px)" href="css/navigation-mobile.css" />
