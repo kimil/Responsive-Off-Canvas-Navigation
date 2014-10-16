@@ -21,6 +21,7 @@
 		border-top: 1px solid #000;
 		border-bottom: 1px solid #000;
 		display: block;
+		height: 46px;
 	}
 	
 	nav .inner {
@@ -67,7 +68,7 @@
 	}
 	
 	nav ul.menu li a.indicator {
-		background: url(../img/indicator.svg) right bottom no-repeat;
+		background: url(../img/indicator-grey.svg) right bottom no-repeat;
 		background-size: 15px auto;
 	}
 	
@@ -86,10 +87,6 @@
 	
 	nav ul.menu li:hover > ul {
 		display: inline-block;
-	}
-	
-	nav ul.menu ul {
-		display: none;
 		position: absolute;
 		background-image: -o-linear-gradient(bottom, #1F1F1F 0%, #1B1B1B 100%);
 		background-image: -moz-linear-gradient(bottom, #1F1F1F 0%, #1B1B1B 100%);
@@ -99,11 +96,17 @@
 		border: 1px solid #000;
 		width: 250px;
 		left: 0;
+		top: 44px;
 		margin: 0;
 		-webkit-animation-duration: 0.2s;
 		-moz-animation-duration: 0.2s;
 		animation-duration: 0.2s;
 	}
+	
+	nav ul.menu ul {
+		display: none;
+	}
+
 	
 	nav ul.menu ul li {
 		display: inline-block;
@@ -135,10 +138,26 @@
 	nav ul.menu li a {
 		padding: 15px;
 	}
+	
+	nav {
+		height: 54px;
+	}
+	
+	nav ul.menu li:hover > ul {
+		top: 52px;
+	}
 }
 
 @media screen and (min-width:1024px) {
 	nav ul.menu li a {
 		padding: 20px;
+	}
+	
+	nav {
+		height: 64px;
+	}
+	
+	nav ul.menu li:hover > ul {
+		top: 62px;
 	}
 }
